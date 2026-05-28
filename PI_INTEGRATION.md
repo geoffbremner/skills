@@ -30,6 +30,16 @@ cd ~/Documents/skills
 git remote add upstream https://github.com/mattpocock/skills.git
 ```
 
+Manually check it:
+```bash
+git remote -v
+```
+
+If it's not working...
+```bash
+git remote set-url upstream https://github.com/mattpocock/skills.git
+```
+
 ## Step 4: Configure Pi Settings
 
 Create or edit the pi settings file at `~/.pi/agent/settings.json`.
