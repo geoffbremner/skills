@@ -68,8 +68,7 @@ EOF
 **To edit:**
 
 ```bash
-code ~/.pi/agent/settings.json
-# or: vim ~/.pi/agent/settings.json
+vim ~/.pi/agent/settings.json
 ```
 
 Add the `skills` array to your existing JSON:
