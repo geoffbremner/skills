@@ -89,7 +89,7 @@ Add the `skills` array to your existing JSON:
 ## Step 5: Add AGENTS.md
 
 ```bash
-cp STARTER_AGENTS.md ~/.pi/agents/AGENTS.md
+cp STARTER_AGENTS.md ~/.pi/agent/AGENTS.md
 ```
 
 This context will be loaded in every pi session.
