@@ -24,7 +24,7 @@ Now you can manage and iterate on the skills for built for you pi development fl
 
 ```bash
 cd ~/Documents
-git clone https://github.com/YOUR_USERNAME/skills.git
+git clone https://github.com/geoffbremner/skills
 ```
 
 Replace `YOUR_USERNAME` with your GitHub username. This creates a `skills` directory at `~/Documents/skills`.
