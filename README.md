@@ -86,7 +86,15 @@ Add the `skills` array to your existing JSON:
 
 **Note:** We only include `engineering`, `productivity`, and `misc` directories. The `personal`, `in-progress`, and `deprecated` directories are intentionally excluded.
 
-## Step 5: Verify the Installation
+## Step 5: Add AGENTS.md
+
+```bash
+cp STARTER_AGENTS.md ~/.pi/agents/AGENTS.md
+```
+
+This context will be loaded in every pi session.
+
+## Step 6: Verify the Installation
 
 Reload skills in pi:
 
