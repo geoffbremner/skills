@@ -21,7 +21,7 @@ cd ~/Documents
 git clone https://github.com/geoffbremner/skills
 ```
 
-This document assumes you are workinig in ~/Documents directory.
+This document assumes you are working in ~/Documents directory.
 
 Now you can manage and iterate on the skills built for your pi development flows.
 
