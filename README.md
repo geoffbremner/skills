@@ -14,22 +14,18 @@ This guide explains how to integrate Matt Pocock's skills into your pi coding ag
 
 You need to have pi installed and configured. See [pi documentation] (https://pi.dev/) for installation instructions.
 
-## Step 1: Fork the Repository
-
-**On your home computer:** Go to `https://github.com/geoffbremner/skills` and click **Fork** to create your own copy.
-
-Now you can manage and iterate on the skills for built for you pi development flows
-
-## Step 2: Clone Your Fork
+## Step 1: Clone this Repository
 
 ```bash
 cd ~/Documents
 git clone https://github.com/geoffbremner/skills
 ```
 
-Replace `YOUR_USERNAME` with your GitHub username. This creates a `skills` directory at `~/Documents/skills`.
+This document assumes you are workinig in ~/Documents directory.
 
-## Step 3: Configure Pi Settings
+Now you can manage and iterate on the skills built for your pi development flows.
+
+## Step 2: Configure Pi Settings
 
 Create or edit the pi settings file at `~/.pi/agent/settings.json`.
 
@@ -69,7 +65,7 @@ Add the `skills` array to your existing JSON:
 
 **Note:** We only include `engineering`, `productivity`, and `misc` directories. The `personal`, `in-progress`, and `deprecated` directories are intentionally excluded.
 
-## Step 4: Add AGENTS.md
+## Step 3: Add AGENTS.md
 
 ```bash
 cp STARTER_AGENTS.md ~/.pi/agent/AGENTS.md
