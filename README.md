@@ -16,7 +16,9 @@ You need to have pi installed and configured. See [pi documentation] (https://pi
 
 ## Step 1: Fork the Repository
 
-**On your home computer:** Go to `https://github.com/mattpocock/skills` and click **Fork** to create your own copy.
+**On your home computer:** Go to `https://github.com/geoffbremner/skills` and click **Fork** to create your own copy.
+
+Now you can manage and iterate on the skills for built for you pi development flows
 
 ## Step 2: Clone Your Fork
 
@@ -27,26 +29,7 @@ git clone https://github.com/YOUR_USERNAME/skills.git
 
 Replace `YOUR_USERNAME` with your GitHub username. This creates a `skills` directory at `~/Documents/skills`.
 
-## Step 3: Add Upstream Remote
-
-Add Matt's original repo as upstream so you can pull his updates:
-
-```bash
-cd ~/Documents/skills
-git remote add upstream https://github.com/mattpocock/skills.git
-```
-
-Manually check it:
-```bash
-git remote -v
-```
-
-If it's not working...
-```bash
-git remote set-url upstream https://github.com/mattpocock/skills.git
-```
-
-## Step 4: Configure Pi Settings
+## Step 3: Configure Pi Settings
 
 Create or edit the pi settings file at `~/.pi/agent/settings.json`.
 
@@ -86,15 +69,15 @@ Add the `skills` array to your existing JSON:
 
 **Note:** We only include `engineering`, `productivity`, and `misc` directories. The `personal`, `in-progress`, and `deprecated` directories are intentionally excluded.
 
-## Step 5: Add AGENTS.md
+## Step 4: Add AGENTS.md
 
 ```bash
 cp STARTER_AGENTS.md ~/.pi/agent/AGENTS.md
 ```
 
-This context will be loaded in every pi session.
+This context will be loaded for every pi session. Feel free to read this and modify it to your liking.
 
-## Step 6: Verify the Installation
+## Step 5: Verify the Installation
 
 Reload skills in pi:
 
