@@ -73,7 +73,15 @@ cp STARTER_AGENTS.md ~/.pi/agent/AGENTS.md
 
 This context will be loaded for every pi session. Feel free to read this and modify it to your liking.
 
-## Step 4: Verify the Installation
+## Step 4: Add the curl skill to read webpages:
+
+```bash
+pi install npm:@curl.md/pi
+```
+
+This allows you to paste URLs and pi will fetch them
+
+## Step 5: Verify the Installation
 
 Reload skills in pi:
 
