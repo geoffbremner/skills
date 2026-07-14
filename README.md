@@ -67,11 +67,20 @@ Add the `skills` array to your existing JSON:
 
 ## Step 3: Add AGENTS.md
 
+The agent configuration is split between two primary workflows:
+
+1. **Obsidian Knowledge** — My workflow for maintaining knowledge, vault organization, and documentation. Inspired by Nick Milo.
+2. **Software Engineering** — My workflow for code, debugging, and infrastructure. Inspired by Matt Pocock and Andrej Karpathy
+
+Setup these instructions in your pi agent:
+
 ```bash
-cp STARTER_AGENTS.md ~/.pi/agent/AGENTS.md
+cp agents/AGENTS.md ~/.pi/agent/AGENTS.md
+cp agents/AGENTS_OBSIDIAN.md ~/.pi/agent/AGENTS_OBSIDIAN.md
+cp agents/AGENTS_SOFTWARE.md ~/.pi/agent/AGENTS_SOFTWARE.md
 ```
 
-This context will be loaded for every pi session. Feel free to read this and modify it to your liking.
+This ensures that upon launch, you can specify if you are working on software, knowledge, or a hybrid of both.
 
 ## Step 4: Add the curl skill to read webpages:
 
