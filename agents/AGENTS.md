@@ -8,7 +8,6 @@
 
 1. **Software Engineering** — Code, debugging, refactoring, tests, infrastructure, scripts, APIs
 2. **Obsidian Knowledge** — Notes, vault organization, MOCs, documentation, knowledge management
-3. **Both** — Hybrid work (code + knowledge together)
 
 ---
 
