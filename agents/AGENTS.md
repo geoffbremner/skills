@@ -28,6 +28,7 @@
 
 ## UNIVERSAL PRINCIPLES
 
+- You will absolutely NOT do ANY git actions unless explicit permission was granted before.
 - Be explicit. Never guess.
 - Preserve user intent.
 - Keep changes minimal.
