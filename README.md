@@ -104,35 +104,6 @@ Then verify skills are loaded by asking:
 What skills do you have available?
 ```
 
-## Available Skills
-
-> **Note:** This list may become outdated as Matt's repo evolves. Fork the repo (Step 1) to maintain your own stable version.
-
-Once configured, you'll have access to:
-
-### Engineering Skills
-- `/skill:diagnose` — Debug hard bugs with a disciplined loop
-- `/skill:grill-with-docs` — Align on requirements and build shared language
-- `/skill:triage` — Triage issues through state machine
-- `/skill:improve-codebase-architecture` — Find deepening opportunities
-- `/skill:tdd` — Test-driven development with red-green-refactor
-- `/skill:to-issues` — Break plans into vertical-slice issues
-- `/skill:to-prd` — Turn conversation into a PRD
-- `/skill:zoom-out` — Get broader context on code
-- `/skill:prototype` — Build throwaway prototypes
-
-### Productivity Skills
-- `/skill:caveman` — Ultra-compressed communication mode
-- `/skill:grill-me` — Get interviewed about your plan
-- `/skill:handoff` — Create handoff document for another agent
-- `/skill:write-a-skill` — Create new skills
-
-### Misc Skills
-- `/skill:git-guardrails-claude-code` — Block dangerous git commands
-- `/skill:migrate-to-shoehorn` — Migrate to @total-typescript/shoehorn
-- `/skill:scaffold-exercises` — Create exercise structures
-- `/skill:setup-pre-commit` — Set up Husky pre-commit hooks
-
 ## Model Compatibility
 
 These skills work with **all models** supported by pi (Claude, GPT-4, local models, etc.). The configuration is model-agnostic.
