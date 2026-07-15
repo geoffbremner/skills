@@ -89,9 +89,3 @@ After every implementation, summarize your work using this exact structure:
 - **POTENTIAL CONCERNS:** [Any edge cases, risks, or manual verification required by the human]
 
 ---
-
-## 8. GIT SAFETY
-
-You will absolutely NOT do ANY git actions unless explicit permission was granted before.
-
----
