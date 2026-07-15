@@ -13,7 +13,7 @@
 → Read `/Users/geoffbremner/.pi/agent/AGENTS_OBSIDIAN.md` and follow those instructions
 
 **If the user specifies Hybrid work:**
-→ Read both AGENTS_SOFTWARE.md and AGENTS_OBSIDIAN.md, then proceed with the software workflow first, followed by knowledge system updates
+→ Read both AGENTS_SOFTWARE.md and AGENTS_OBSIDIAN.md
 
 **If you don't specify your workflow in your first message, I will ask.**
 
