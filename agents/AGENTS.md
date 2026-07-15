@@ -4,13 +4,6 @@
 
 ---
 
-## Are you working on:
-
-1. **Software Engineering** — Code, debugging, refactoring, tests, infrastructure, scripts, APIs
-2. **Obsidian Knowledge** — Notes, vault organization, MOCs, documentation, knowledge management
-
----
-
 ## LOADING THE RELEVANT INSTRUCTIONS
 
 **If the user specifies Software Engineering work:**
