@@ -125,6 +125,5 @@ When appropriate, provide:
 - Missing concepts
 - Opportunities to split notes
 - Suggested follow-up notes
-- Tag with AI - generated when you make edits
 
 ---
