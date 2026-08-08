@@ -2,7 +2,7 @@
 
 **By: Geoff Bremner**
 
-This is a lightweight implementation of Matt Pocock skills into pi.dev, used and maintained by Geoff Bremner
+This is a lightweight implementation of Matt Pocock skills into pi.dev, used and maintained by Geoff Bremner. Geoff Bremner modifies these skills and AGENT instructions to fit his workflow.
 
 ## Prerequisites
 
@@ -25,6 +25,8 @@ Now you can manage and iterate on the skills built for your pi development flows
 Create or edit the pi settings file at `~/.pi/agent/settings.json`.
 
 **To create:**
+
+Run this ONCE to ensure no duplication.
 
 ```bash
 mkdir -p ~/.pi/agent
@@ -49,7 +51,7 @@ vim ~/.pi/agent/settings.json
 
 ## Step 3: Add AGENTS.md
 
-The agent configuration is split between two primary workflows:
+The agent configuration is split between two _primary_ workflows:
 
 1. **Obsidian Knowledge** — My workflow for maintaining knowledge, vault organization, and documentation. Inspired by Nick Milo.
 2. **Software Engineering** — My workflow for code, debugging, and infrastructure. Inspired by Matt Pocock and Andrej Karpathy
@@ -62,6 +64,12 @@ cp agents/AGENTS_OBSIDIAN.md ~/.pi/agent/AGENTS_OBSIDIAN.md
 cp agents/AGENTS_SOFTWARE.md ~/.pi/agent/AGENTS_SOFTWARE.md
 ```
 
+OPTIONAL - FILES workflow for managing multiple external physical drives
+
+```bash
+cp agents/AGENTS_FILES.md ~/.pi/agent/AGENTS_FILES.md
+```
+
 This ensures that upon launch, you can specify if you are working on software, knowledge, or a hybrid of both.
 
 ## Step 4: Add the curl skill to read webpages:
@@ -70,7 +78,7 @@ This ensures that upon launch, you can specify if you are working on software, k
 pi install npm:@curl.md/pi
 ```
 
-This allows you to paste URLs and pi will fetch them
+This allows you to paste URLs and pi will fetch them. This is Geoff's must-have tool for pi.
 
 ## Step 5: Verify the Installation
 
@@ -90,21 +98,6 @@ What skills do you have available?
 
 These skills work with **all models** supported by pi (Claude, GPT-4, local models, etc.). The configuration is model-agnostic.
 
-## Updating Skills
-
-To get Matt's latest updates:
-
-```bash
-cd ~/Documents/skills
-git pull upstream main
-git push origin main  # push to your fork
-```
-
-Then reload skills in pi:
-
-```
-/reload
-```
 
 ## Troubleshooting
 
