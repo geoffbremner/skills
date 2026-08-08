@@ -1,6 +1,12 @@
-# Pi Integration Guide
+---
 
-**By: Geoff Bremner**
+👤 **Author:** Geoff Bremner  
+🔗 **Connect:** https://linktr.ee/gbaudio  
+🤖 **Built with Gemini and tested with Gemini.**
+
+---
+
+# Pi Integration Guide
 
 This is a lightweight implementation of skills, originally forked from Matt Pocock skills, purposely focussed on pi.dev, used and maintained by Geoff Bremner. Geoff Bremner modifies these skills and AGENT instructions to fit his workflow.
 
