@@ -6,19 +6,20 @@ This is a lightweight implementation of Matt Pocock skills into pi.dev, used and
 
 ## Prerequisites
 
-You need to have pi installed and configured. See [pi documentation] (https://pi.dev/) for installation instructions.
+You need to have pi installed and configured. See [pi documentation](https://pi.dev/) for installation instructions.
 
 ## Step 1: Clone this Repository
 
 ```bash
 cd ~/Documents
 git clone https://github.com/geoffbremner/skills
+cd skills
 ```
 
-This document assumes you are working in ~/Documents directory.
-This document assumes you're setting this up with an LLM, but can be done manually.
-This document has only been tested on macOS
-Now you can manage and iterate on the skills built for your pi development flows.
+This document:
+- Is LLM friendly, but can be done manually.
+- has only been tested on macOS
+- works from `~/Documents/skills`
 
 ## Step 2: Configure Pi Settings
 
@@ -39,12 +40,6 @@ cat > ~/.pi/agent/settings.json << 'EOF'
   ]
 }
 EOF
-```
-
-**To edit:**
-
-```bash
-vim ~/.pi/agent/settings.json
 ```
 
 **Note:** We only include `engineering`, `productivity`, and `misc` directories. The `personal`, `in-progress`, and `deprecated` directories are intentionally excluded.
@@ -70,7 +65,7 @@ OPTIONAL - FILES workflow for managing multiple external physical drives
 cp agents/AGENTS_FILES.md ~/.pi/agent/AGENTS_FILES.md
 ```
 
-This ensures that upon launch, you can specify if you are working on software, knowledge, or a hybrid of both.
+This ensures that upon pi launch, you specify working on software, knowledge, or a hybrid of both.
 
 ## Step 4: Add the curl skill to read webpages:
 
@@ -103,6 +98,9 @@ These skills work with **all models** supported by pi (Claude, GPT-4, local mode
 
 ### Skills not showing up?
 
-1. Check the path in `~/.pi/agent/settings.json` matches where you cloned the repo
+1. Check the path in `~/.pi/agent/settings.json` matches where you cloned the repo. If there are problems check using vim:
+```bash
+vim ~/.pi/agent/settings.json
+```
 2. Run `/reload`
 3. Verify JSON syntax is valid (no trailing commas, proper quotes)
