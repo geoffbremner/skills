@@ -4,6 +4,10 @@
 
 This is a lightweight implementation of skills, originally forked from Matt Pocock skills, purposely focussed on pi.dev, used and maintained by Geoff Bremner. Geoff Bremner modifies these skills and AGENT instructions to fit his workflow.
 
+## About
+
+[About Geoff Bremner](https://linktr.ee/gbaudio)
+
 ## Prerequisites
 
 You need to have pi installed and configured. See [pi documentation](https://pi.dev/) for installation instructions.
