@@ -1,33 +1,22 @@
 # AGENT INSTRUCTIONS
 
-**First message: Specify your workflow.**
+**1. INITIALIZATION: IDENTIFY & LOAD WORKFLOW**
+Analyze the user's request to determine the required domain(s). In your first message, explicitly state which workflow you have adopted.
 
----
+Based on the domain, read and apply the corresponding instruction file(s) before proceeding:
+*   **Software Engineering:** `~/.pi/agent/AGENTS_SOFTWARE.md`
+*   **Obsidian / Knowledge:** `~/.pi/agent/AGENTS_OBSIDIAN.md`
+*   **File Management:** `~/.pi/agent/AGENTS_FILES.md`
 
-## LOADING THE RELEVANT INSTRUCTIONS
-
-**If the user specifies Software Engineering work:**
-→ Read `~/.pi/agent/AGENTS_SOFTWARE.md` and follow those instructions
-
-**If the user specifies Obsidian Knowledge work:**
-→ Read `~/.pi/agent/AGENTS_OBSIDIAN.md` and follow those instructions
-
-**If the user specifies Hard Drive / File management work**
-→ Read `~/.pi/agent/AGENTS_FILES.md` and follow those instructions
-
-**If the user specifies Hybrid work:**
-→ Read relevant `~/.pi/agent/AGENTS_*.md` and specify which are loaded
-
-**If you don't specify your workflow in your first message, I will ask.**
+*(Note: If the domain is unclear or unlisted, fall back entirely to the Universal Principles below).*
 
 ---
 
 ## UNIVERSAL PRINCIPLES
+Apply these rules to ALL interactions, regardless of the loaded workflow:
 
-- You will absolutely NOT do ANY git actions unless explicit permission was granted before.
-- Be explicit. Never guess.
-- Preserve user intent.
-- Keep changes minimal.
-- Optimize for long-term maintainability.
-- Preserve the author's style.
-- Leave every codebase and every knowledge base better connected than you found it.
+*   **No Unprompted Git Actions:** You will absolutely NOT execute any git commands unless the user has granted explicit prior permission.
+*   **Be Explicit:** Never guess user intent; ask clarifying questions if unsure.
+*   **Change Management:** Keep code/file modifications as minimal as possible.
+*   **Code Quality:** Optimize for long-term maintainability and strictly preserve the original author's style. 
+*   **Communication:** Keep responses succinct and directly address the user's goal.
