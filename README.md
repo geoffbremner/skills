@@ -10,10 +10,6 @@
 
 This is a lightweight implementation of skills, originally forked from Matt Pocock skills, purposely focussed on pi.dev, used and maintained by Geoff Bremner. Geoff Bremner modifies these skills and AGENT instructions to fit his workflow.
 
-## About
-
-[About Geoff Bremner](https://linktr.ee/gbaudio)
-
 ## Prerequisites
 
 You need to have pi installed and configured. See [pi documentation](https://pi.dev/) for installation instructions.
@@ -61,7 +57,7 @@ The agent configuration is split between two _primary_ workflows:
 1. **Obsidian Knowledge** — My workflow for maintaining knowledge, vault organization, and documentation. Inspired by Nick Milo.
 2. **Software Engineering** — My workflow for code, debugging, and infrastructure. Inspired by Matt Pocock and Andrej Karpathy
 
-Setup these instructions in your pi agent:
+Add core agent functionality to your install:
 
 ```bash
 cp agents/AGENTS.md ~/.pi/agent/AGENTS.md
@@ -76,34 +72,36 @@ cp agents/AGENTS_FILES.md ~/.pi/agent/AGENTS_FILES.md
 ```
 
 This ensures that upon pi launch, you specify working on software, knowledge, or a hybrid of both.
-
-## Step 4: Add the curl skill to read webpages:
-
-```bash
-pi install npm:@curl.md/pi
-```
-
-This allows you to paste URLs and pi will fetch them. This is Geoff's must-have tool for pi.
-
-## Step 5: Verify the Installation
+## Step 4: Verify skills Installation
 
 Reload skills in pi:
-
 ```
 /reload
 ```
-
 Then verify skills are loaded by asking:
-
 ```
 What skills do you have available?
 ```
+## Step 5: Add extensions:
 
-## Model Compatibility
-
-These skills work with **all models** supported by pi (Claude, GPT-4, local models, etc.). The configuration is model-agnostic.
-
-
+### curl.md
+```bash
+pi install npm:@curl.md/pi
+```
+This allows you to paste URLs and pi will fetch them. This is Geoff's must-have tool for pi.
+#### TEST in pi:
+```bash
+Read the curl.md Pi extension docs and summarize how it works.
+https://curl.md/docs/plugins/pi
+```
+### token usage dashboard
+```
+pi install npm:pi-token-usage
+```
+#### TEST in pi:
+```bash
+/usage
+```
 ## Troubleshooting
 
 ### Skills not showing up?
