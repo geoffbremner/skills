@@ -12,7 +12,11 @@ This is a lightweight implementation of skills, originally forked from Matt Poco
 
 ## Prerequisites
 
-You need to have pi installed and configured. See [pi documentation](https://pi.dev/) for installation instructions.
+You need to have pi installed and configured. See **Step 0** below.
+
+## Step 0: Install Pi
+
+Visit [pi.dev](https://pi.dev/) and follow the installation instructions for your platform.
 
 ## Step 1: Clone this Repository
 
