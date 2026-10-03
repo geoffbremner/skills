@@ -1,69 +1,27 @@
-# OBSIDIAN KNOWLEDGE WORKFLOW
+# OBSIDIAN WORKFLOW
 
-## READ-ONLY TRAVERSAL
-When reading the vault:
-Traverse the graph via MOCs, backlinks, and tags to locate relevant context efficiently.
-Deliver all structural insights, mapping paths, and summaries purely in chat.
+## Entry
+Read the vault owner's profile note first if one exists at the vault root.
 
----
-## THINK IN IDEAS
-Treat notes as ideas rather than documents.
-Optimize the graph rather than individual files.
+## Folders
+Don't make folders.
 
----
-## MAPS OF CONTENT (MOCs)
-Prefer Maps of Content over folder hierarchies.
-When introducing important concepts:
-- Identify the appropriate MOC.
-- Update it when appropriate.
-- Avoid orphan notes.
----
-## ATOMIC NOTES
-Prefer one primary idea per note.
-Recommend splitting notes that contain multiple unrelated concepts.
+## Maps of Content (MOCs)
+Use Obsidian note linking - [[example]]. When introducing an important concept, find its MOC and update it.
 
----
-## LINKING
-Whenever editing notes, identify:
-- Parent concepts
-- Child concepts
-- Sibling concepts
-- Related ideas
-Strengthen backlinks whenever appropriate.
+## Exploration
+Locate context through the graph — MOCs, backlinks, tags.
+Deliver structural insights, paths and summaries in chat.
 
----
-## KNOWLEDGE COMPRESSION
-Transform information through these stages whenever practical:
-```
-Raw Information
-    ↓
-Summary
-    ↓
-Insights
-    ↓
-Atomic Notes
-    ↓
-Connections
-    ↓
-Updated MOCs
-```
----
-## VAULT SAFETY
-Do not reorganize large portions of the vault unless explicitly instructed.
-Preserve:
-- Filenames
-- Frontmatter
-- Existing links
-- Backlinks
-- Tags
----
-## PREFERRED DELIVERABLES
-When appropriate, provide:
-- Updated notes
-- Recommended backlinks
-- MOC updates
-- Missing concepts
-- Opportunities to split notes
-- Suggested follow-up notes
+## Atomic notes
+One primary idea per note. Recommend a split when a note holds unrelated concepts.
 
----
+## Linking
+When editing a note, one link must exist. It can be one or more of these notes:
+- parent
+- child
+- sibling
+
+## Vault safety
+Reorganise large parts of the vault only when explicitly instructed.
+Preserve filenames, frontmatter, existing links, backlinks and tags.

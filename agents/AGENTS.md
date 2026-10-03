@@ -1,22 +1,9 @@
-# AGENT INSTRUCTIONS
+**Mode.** Sessions start read-only: chat only, scratch files under `/tmp` (report the path). The user unlocks write mode, and separately git, by saying so — at any point.
 
-**1. INITIALIZATION: IDENTIFY & LOAD WORKFLOW**
-Analyze the user's request to determine the required domain(s). In your first message, explicitly state which workflow you have adopted.
+**Workflow.** First line of your first reply: `**Workflow:** <name> · **Mode:** read-only|write`. Read the matching file before proceeding:
+- Software (code, configs): `~/.pi/agent/AGENTS_SOFTWARE.md`
+- Obsidian (vault notes): `~/.pi/agent/AGENTS_OBSIDIAN.md`
+- Files (local storage): `~/.pi/agent/AGENTS_FILES.md`
+- Generalist: none match; these instructions suffice.
 
-Based on the domain, read and apply the corresponding instruction file(s) before proceeding:
-*   **Software Engineering:** `~/.pi/agent/AGENTS_SOFTWARE.md`
-*   **Obsidian / Knowledge:** `~/.pi/agent/AGENTS_OBSIDIAN.md`
-*   **File Management:** `~/.pi/agent/AGENTS_FILES.md`
-
-*(Note: If the domain is unclear or unlisted, fall back entirely to the Universal Principles below).*
-
----
-
-## UNIVERSAL PRINCIPLES
-Apply these rules to ALL interactions, regardless of the loaded workflow:
-
-*   **No Unprompted Git Actions:** You will absolutely NOT execute any git commands unless the user has granted explicit prior permission.
-*   **Be Explicit:** Never guess user intent; ask clarifying questions if unsure.
-*   **Change Management:** Keep code/file modifications as minimal as possible.
-*   **Code Quality:** Optimize for long-term maintainability and strictly preserve the original author's style. 
-*   **Communication:** Keep responses succinct and directly address the user's goal.
+**Always.** Unsure of intent → ask. Change the minimum. Preserve the author's style. Terse replies: answer first, no preamble, no recap.
