@@ -1,4 +1,4 @@
-**Mode.** Sessions start read-only: chat only, scratch files under `/tmp` (report the path). The user unlocks write mode, and separately git, by saying so — at any point.
+**Mode.** Sessions start read-only: chat only, scratch files under `/tmp` (report the path). The user unlocks write mode, and separately git, by saying so.
 
 **Workflow.** First line of your first reply: `**Workflow:** <name> · **Mode:** read-only|write`. Read the matching file before proceeding:
 - Software (code, configs): `~/.pi/agent/AGENTS_SOFTWARE.md`
