@@ -37,6 +37,8 @@ Run the setup script from the repository root:
 
 The script links Pi's standard global skill directory (`~/.pi/agent/skills`) to this repository. If an existing skills directory is found, it is moved to a timestamped backup before the link is created. The script is safe to run again and supports a custom Pi agent directory via `PI_AGENT_DIR`.
 
+The script also adds `export TMPDIR=/tmp` to your shell startup file (`~/.zshenv` for zsh, `~/.bashrc` for bash) if it isn't already there. This changes the temp directory for every new shell, replacing the macOS default under `/var/folders/`. It's generally fine, but open a new shell after running the script.
+
 All repository skills are discovered recursively. The `in-progress` and `deprecated` directories are available but are not intended for normal use.
 
 ## Step 3: Agent Instructions

@@ -5,6 +5,24 @@ repo_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd -P)"
 skills_source="$repo_root/skills"
 agent_dir="${PI_AGENT_DIR:-$HOME/.pi/agent}"
 
+tmpdir_line='export TMPDIR=/tmp'
+case "$(basename "${SHELL:-}")" in
+  zsh) shell_rc="$HOME/.zshenv" ;;
+  bash) shell_rc="$HOME/.bashrc" ;;
+  *) shell_rc="" ;;
+esac
+
+if [[ -n "$shell_rc" ]]; then
+  if grep -qxF "$tmpdir_line" "$shell_rc" 2>/dev/null; then
+    printf 'TMPDIR already set in %s\n' "$shell_rc"
+  else
+    printf '\n%s\n' "$tmpdir_line" >> "$shell_rc"
+    printf 'Added TMPDIR=/tmp to %s\n' "$shell_rc"
+  fi
+else
+  printf 'Unknown shell %s; add %s to your shell profile manually\n' "${SHELL:-unknown}" "$tmpdir_line"
+fi
+
 if [[ ! -d "$skills_source" ]]; then
   printf 'Error: skills directory not found at %s\n' "$skills_source" >&2
   exit 1
